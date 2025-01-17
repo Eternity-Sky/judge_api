@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "api/evaluate.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/evaluate",
+            "methods": ["POST"],
+            "dest": "api/evaluate.js"
+        }
+    ]
+} 
